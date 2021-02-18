@@ -5,15 +5,15 @@
 //  Created by Nikolai Krusser on 11.02.2021.
 //
 
-import UIKit
+import RealmSwift
 
-struct Place {
+class Place: Object {
     
-    var name: String
-    var type: String?
-    var location: String?
-    var image: UIImage?
-    var restaurantImage: String?
+   @objc dynamic var name = ""
+    @objc dynamic var type: String?
+    @objc dynamic var location: String?
+    @objc dynamic var image: UIImage?
+//    @objc dynamic var restaurantImage: String?
     
    static let restaurantNames = [
         "Burger Heroes", "Kitchen", "Bonsai", "Дастархан",
